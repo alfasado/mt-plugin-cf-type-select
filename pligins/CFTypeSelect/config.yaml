@@ -1,0 +1,14 @@
+id:   CFTypeSelect
+key:  cftypeselect
+name: CustomField Type Select
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+l10n_class: CFTypeSelect::L10N
+description: '<__trans phrase="You can specify the delimiter of CustomField type Drop Down Menu.">'
+config_settings:
+    CFDropDownDelimiter:
+        default: /
+callbacks:
+    pre_run: $cftypeselect::CFTypeSelect::Field::_override_customfield_types
+
